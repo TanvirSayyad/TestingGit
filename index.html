@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git and GitHub Solution Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-    <p><This is v1 version </p>
+
+    <div class="container">
+        <h2>Git and GitHub Solution Submission Form</h2>
+        <form action="submit_solution.php" method="post">
+            <label for="username">GitHub Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your GitHub username" required>
+
+            <label for="repository">GitHub Repository:</label>
+            <input type="text" id="repository" name="repository" placeholder="Enter the repository name" required>
+
+            <label for="solution">Solution:</label>
+            <textarea id="solution" name="solution" rows="8" placeholder="Describe your solution or issue" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3>Steps for Using Git and GitHub</h3>
+        <ol>
+            <li>Initialize a new Git repository: <code>git init</code></li>
+            <li>Add files to staging: <code>git add .</code></li>
+            <li>Commit changes: <code>git commit -m "Initial commit"</code></li>
+            <li>Create a new repository on GitHub.</li>
+            <li>Connect local repo to GitHub: <code>git remote add origin https://github.com/your-username/your-repository.git</code></li>
+            <li>Push changes to GitHub: <code>git push -u origin master</code></li>
+            <li>To pull updates from GitHub: <code>git pull origin master</code></li>
+            <li>Create a new branch: <code>git checkout -b new-feature</code></li>
+            <li>Merge branch into master: <code>git merge new-feature</code></li>
+            <li>Push updates: <code>git push origin master</code></li>
+        </ol>
+    </div>
+
 </body>
 </html>
