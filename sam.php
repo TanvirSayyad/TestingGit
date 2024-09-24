@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-   <h1> this 6.1 version</h1>
+   <h1> this v7 version</h1>
 </body>
 </html>
