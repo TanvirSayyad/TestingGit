@@ -1,0 +1,6 @@
+div{
+    padding: auto;
+    color: aquamarine;
+    float: left;
+    flex-direction: row;
+}
